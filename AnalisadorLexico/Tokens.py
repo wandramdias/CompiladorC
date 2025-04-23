@@ -1,11 +1,11 @@
 token_specification = [
-    ("PREPROCESSOR", r"#\s*\w+.*"),
+    ("PREPROCESSOR",   r"#\s*\w+.*"),
 
     # Comentários e literais
     ("COMMENT_MULTI",  r"/\*[\s\S]*?\*/"),
     ("COMMENT_SINGLE", r"//.*"),
-    ("STRING_LITERAL",         r'"(\\.|[^"\\])*"'),
-    ("CHAR_LITERAL",           r"'(\\.|[^'\\])'"),
+    ("STRING_LITERAL", r'"(\\.|[^"\\])*"'),
+    ("CHAR_LITERAL",   r"'(\\.|[^'\\])'"),
 
     # Palavras-chave (em ordem alfabética)
     ("KW_BREAK",       r"\bbreak\b"),

@@ -20,6 +20,8 @@ def tokenize(code):
             line_num += 1
         elif kind == "SKIP" or kind.startswith("COMMENT"):
             pass
+        elif kind == "SKIP" or kind.startswith("PREPROCESSOR"):
+            pass
         elif kind == "MISMATCH":
             raise SyntaxError(f"Caractere inesperado {value!r} na linha {line_num}")
         else:

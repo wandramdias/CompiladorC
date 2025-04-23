@@ -1,5 +1,2 @@
 [
-    ('PREPROCESSOR', '#include <stdio.h>'),
-    ('PREPROCESSOR', '#define PI 3.14159'),
-    ('PREPROCESSOR', '#define quadrado(x) ((x)*(x))'),
 ]

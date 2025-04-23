@@ -1,6 +1,4 @@
 [
-    ('PREPROCESSOR', '#include <stdio.h>'),
-    ('PREPROCESSOR', '#define PI 3.14159'),
     ('KW_INT', 'int'),
     ('ID_FUNC', 'main'),
     ('DELIM_LPAREN', '('),
