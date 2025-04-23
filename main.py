@@ -1,20 +1,29 @@
+import os
 from AnalisadorLexico.AnalisadorLexico import tokenize
 
+# Diretórios de entrada e saída
+input_dir = "testes"
+output_dir = "outputs_lexico"
 
-# Abrir e ler o arquivo 'programa1.c' localizado na pasta 'testes'
-file_path = "testes/programa1.c"
-with open(file_path, "r") as file:
-    code = file.read()
+# Criar diretório de saída se não existir
+os.makedirs(output_dir, exist_ok=True)
 
-# Gerar os tokens a partir do conteúdo do arquivo
-tokens = tokenize(code)
+# Iterar por todos os arquivos da pasta 'testes'
+for filename in os.listdir(input_dir):
+    if filename.endswith(".c"):
+        file_path = os.path.join(input_dir, filename)
+        with open(file_path, "r") as file:
+            code = file.read()
 
-# Salvar os tokens no formato de lista de tuplas
-output_path = "AnalisadorLexico/tokens_output.txt"
-with open(output_path, "w") as f:
-    f.write("[\n")
-    for token in tokens:
-        f.write(f"    ('{token.type}', '{token.value}'),\n")
-    f.write("]")
+        # Tokenizar o conteúdo do arquivo
+        tokens = tokenize(code)
 
-print("Tokens salvos em 'AnalisadorLexico/tokens_output.txt' no formato desejado")
+        # Criar caminho de saída com mesmo nome do arquivo de entrada
+        output_path = os.path.join(output_dir, f"{filename}_tokens.txt")
+        with open(output_path, "w") as f:
+            f.write("[\n")
+            for token in tokens:
+                f.write(f"    ('{token.type}', '{token.value}'),\n")
+            f.write("]\n")
+
+        print(f"Tokens de '{filename}' salvos em '{output_path}'")

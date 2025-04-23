@@ -1,4 +1,6 @@
 token_specification = [
+    ("PREPROCESSOR", r"#\s*\w+.*"),
+
     # Comentários e literais
     ("COMMENT_MULTI",  r"/\*[\s\S]*?\*/"),
     ("COMMENT_SINGLE", r"//.*"),
@@ -86,4 +88,5 @@ token_specification = [
     ("NEWLINE",         r"\n"),
     ("SKIP",            r"[ \t\r]+"),
     ("MISMATCH",        r"."),
+
 ]

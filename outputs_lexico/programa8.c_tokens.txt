@@ -1,0 +1,14 @@
+[
+    ('KW_INT', 'int'),
+    ('OP_MUL', '*'),
+    ('ID_VAR', 'ptr'),
+    ('OP_ASSIGN', '='),
+    ('OP_BIT_AND', '&'),
+    ('ID_VAR', 'x'),
+    ('DELIM_SEMICOLON', ';'),
+    ('OP_MUL', '*'),
+    ('ID_VAR', 'ptr'),
+    ('OP_ASSIGN', '='),
+    ('INT_LITERAL', '10'),
+    ('DELIM_SEMICOLON', ';'),
+]

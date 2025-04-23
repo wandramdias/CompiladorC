@@ -1,0 +1,7 @@
+[
+    ('KW_INT', 'int'),
+    ('ID_VAR', 'x'),
+    ('OP_ASSIGN', '='),
+    ('INT_LITERAL', '5'),
+    ('DELIM_SEMICOLON', ';'),
+]

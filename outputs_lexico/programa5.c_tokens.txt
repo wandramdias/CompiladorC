@@ -1,0 +1,13 @@
+[
+    ('ID_FUNC', 'printf'),
+    ('DELIM_LPAREN', '('),
+    ('STRING_LITERAL', '"Olá, mundo!\n"'),
+    ('DELIM_RPAREN', ')'),
+    ('DELIM_SEMICOLON', ';'),
+    ('KW_CHAR', 'char'),
+    ('OP_MUL', '*'),
+    ('ID_VAR', 'texto'),
+    ('OP_ASSIGN', '='),
+    ('STRING_LITERAL', '"Isso é uma string com \\n e acentos: café, ação."'),
+    ('DELIM_SEMICOLON', ';'),
+]

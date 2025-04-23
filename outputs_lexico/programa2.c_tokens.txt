@@ -1,0 +1,11 @@
+[
+    ('KW_INT', 'int'),
+    ('ID_FUNC', 'main'),
+    ('DELIM_LPAREN', '('),
+    ('DELIM_RPAREN', ')'),
+    ('DELIM_LBRACE', '{'),
+    ('KW_RETURN', 'return'),
+    ('INT_LITERAL', '0'),
+    ('DELIM_SEMICOLON', ';'),
+    ('DELIM_RBRACE', '}'),
+]
